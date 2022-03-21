@@ -1,4 +1,5 @@
-# Mimo
+# ionutziv7.github.mimo.io
+
 Learning to code with mimo 
 
 Building websites and have fun along the way
