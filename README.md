@@ -1,4 +1,4 @@
-# ionutziv7.github.mimo.io
+# ionutziv7.githubmimo.io
 
 Learning to code with mimo 
 
