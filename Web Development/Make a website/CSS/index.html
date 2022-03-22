@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Introduction CSS</title>
+  </head>
+  <body>
+    <p style="color: blue">I need CSS treatment.</p>
+    <p style="color: red">Me too</p>
+    I could be a part-time model.
+    <p>
+      In a nutshell, the rules of a style sheet consist of
+      <strong>selectors</strong> and <strong>declarations.</strong>
+    </p>
+    <p>
+      Let's start with <strong>selectors</strong>, which can select HTML
+      elements based on their <strong>types, IDs, classes</strong> and more.
+    </p>
+    <p>
+      As you've seen, <strong>declaration blocks</strong> are enclosed in
+      <strong>braces</strong> and consist of <strong>declarations</strong> that
+      are separated by <strong>semicolons.</strong>
+    </p>
+    <p id="declaration">
+      A <strong>declaration</strong> consists of a <strong>property</strong>, a
+      colon, and a <strong>value.</strong>
+    </p>
+    <p>
+      Depending on the property, the value can be a number, a word or some kind
+      of measure.
+    </p>
+    <p id="pgreen">I'm a paragraph, what do you want?</p>
+    <p>
+      Fantastic! <strong>Type selectors</strong> find HTML elements based on
+      their <strong>tags</strong>, which is why we also call them
+      <strong>element selectors.</strong>
+    </p>
+    <p>
+      What if we have multiple elements but only want to select a
+      <strong>particular element</strong>? <br />We can use the
+      <em>id</em> attribute to give it a <strong>hook.</strong>
+    </p>
+    <p id="topParagraph">
+      This is a paragraph with the id="topParagraph" and color:dodgerblue;
+    </p>
+    <p>
+      Sweet! With the <em>id</em> attribute, we can create a
+      <strong>unique identifier</strong> for an
+      <strong>HTML element.</strong> Let's find out how we can make use of it!
+    </p>
+    <p>
+      We create an <strong>ID selector</strong> using the
+      <strong>hash simbol</strong> and, unsurprisingly, an
+      <strong>ID name,</strong> which is the value in an <em>id</em> attribute.
+    </p>
+    <p>
+      Great! The <strong>ID selector</strong> selects the HTML element with a
+      <em>topParagraph</em> value for its <em>id</em> attribute.
+    </p>
+    <p>
+      What if we have multiple HTML elements but, this time, want to select a
+      <strong>bunch of particular elements?</strong> Let's make use of the
+      <em>class</em> attribute!
+    </p>
+    <p class="box">I'm a paragraph as well.</p>
+    <div class="box">I'm not, so what?</div>
+    <p>
+      Fantastic! With the <em>class</em> attribute, we create a
+      <strong>hook</strong> for multiple HTML elements. Let's find out how we
+      can make use of it!
+    </p>
+    <p>
+      We create a <strong>class selector</strong> using a
+      <strong>full stop</strong> and a <strong>class name</strong>, which is a
+      value from a <em>class</em> attribute.
+    </p>
+    <p>
+      Classes are a great way to apply styles to multiple HTML elements,
+      regardless of their type.
+    </p>
+    <p>
+      Apart from creating a hook for multiple HTTML elements with a single class
+      selector, an HTML element can have <strong>multiple classes.</strong>
+    </p>
+    <p class="primary-text">I'm a paragraph what do you want?</p>
+    <p class="box">I'm a paragraph as well.</p>
+    <div class="box primary-text">I'm not so what?</div>
+    <p>
+      See that? Multiple classes are space-separated in the
+      <em>class</em> attribute and help us <strong>reuse style</strong> that
+      we'd otherwise have to repeat.
+    </p>
+    <p>
+      Which of these things belong to <strong>rules</strong> in a style sheet?
+      <br /><br />
+      Select one or more answers
+      <br />
+      Value &#10003;
+      <br />
+      Properties &#10003;
+      <br />
+      Selectors &#10003;
+      <br />
+      Tags
+    </p>
+    <p>
+      Great! A rule consists of a <strong>selector</strong> and declaration
+      block, which consists of <strong>properties</strong> and
+      <strong>values.</strong>/p>
+    </p>
+    <p class="primary-text" id="introduction">
+      Just a small-town paragraph, living in a lonely world.
+    </p>
+    <div class="secondary-text"></div>
+    <p>
+      We can select the paragraph based on its <strong>type, ID</strong> or
+      <strong>class.</strong>
+    </p>
+    <p>The paragraph and the section can't have the same ID.</p>
+    <p>
+      Nailed it! As IDs have to be <strong>unique</strong>, the paragraph and
+      the section can't have the same ID.
+    </p>
+    <br />
+    <br />
+    <p>
+      In this chapter we'll talk some more about <strong>design</strong> and
+      <strong>layout.</strong> </br> <br>
+      The so-called <strong>box model </strong> defines that there's a box
+      around every <strong>HTML element</strong> and describes the amount of
+      <strong>space</strong> the element takes up.
+    </p>
+    <p id="boxmodel">I'm the actual content.</p>
+    <br />
+    <p>Sweet! HTML elemnts consists of <strong>borders, padding, margins</strong> and, well, the actual <strong>content.</strong> 
+        But what exactly are these things?
+    </p>
+    <div class="box2" id="box-1"></div>
+    <div class="box2" id="box-2"></div>
+    <div class="box3"></div>
+    <p> <strong>Margins</strong> are the outermost part of the box model, creating <strong>white space</strong> around an element; separating it from its neighbors.</p>
+    <p class="margins">Some content with margin-top margin-right margin-bottom margin-left </p>
+    <p>The <strong>margin</strong> property uses a <strong>clockwise sequence: </strong> top, right, bottom, left.</p>
+    <p>The <strong>padding</strong> is the innermost part of the box model, creating <strong>white-space</strong> around an <strong>element's content</strong> and inside of its margins and borders.</p>
+    <p class="padding">I'm the actual content.</p>
+    <p>Perfect! We can set the white space inside of an element's margins and borders <strong>individually</strong> or with the <em>padding</em> <strong>shorthand property.</strong></p>
+    <p>By setting the width and height of an element, we're actually setting the size of its <strong>content.</strong> </p>
+    <p>The <strong>total dimensions</strong> include its <strong>padding, borders</strong> and <strong>margins.</strong></p>
+    <p>Sweet! Including the paragraph's padding, vborders and margins on <em>every side, </em>its total <strong>width</strong> is 300px; its <strong>total height is </strong> 200px.</p>
+    <p>Next chapter Layouts</p>
+</body>
+</html>
