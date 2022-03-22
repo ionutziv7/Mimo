@@ -1,0 +1,64 @@
+body {
+  font-family: "Lucida Grande";
+}
+
+p {
+  color: black;
+  font-size: 14px;
+}
+
+#declaration {
+  text-align: right;
+}
+
+#pgreen {
+  color: green;
+}
+
+#topParagraph {
+  color: dodgerblue;
+  font-size: 16px;
+}
+
+.box {
+  border-style: solid;
+}
+
+.primary-text {
+  font-family: "Lucida Grande";
+}
+
+#boxmodel {
+  background-color: #44b3c2;
+  width: 150px;
+  height: 100px;
+  padding: 25px;
+  border: 25px solid #f1a94e;
+  margin: 25px 0px;
+}
+
+.box2 {
+  width: 300px;
+  height: 100px;
+  padding: 25px;
+  border: 2px solid black;
+  margin: 25px;
+}
+
+#box-2 {
+  box-sizing: border-box;
+}
+
+.margins {
+  border: 2px solid #44b3c2;
+  margin: 10px 25px 10px 25px;
+}
+
+.padding {
+  background-color: #44b3c2;
+  width: 150px;
+  height: 100px;
+  padding: 25px;
+  border: 25px solid #f1a94e;
+  margin: 25px 0px;
+}
