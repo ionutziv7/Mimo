@@ -8,6 +8,7 @@
     <title>Introduction CSS</title>
   </head>
   <body>
+    <br><br><br><br>
     <p style="color: blue">I need CSS treatment.</p>
     <p style="color: red">Me too</p>
     I could be a part-time model.
@@ -65,8 +66,6 @@
       <strong>bunch of particular elements?</strong> Let's make use of the
       <em>class</em> attribute!
     </p>
-    <p class="box">I'm a paragraph as well.</p>
-    <div class="box">I'm not, so what?</div>
     <p>
       Fantastic! With the <em>class</em> attribute, we create a
       <strong>hook</strong> for multiple HTML elements. Let's find out how we
@@ -85,9 +84,6 @@
       Apart from creating a hook for multiple HTTML elements with a single class
       selector, an HTML element can have <strong>multiple classes.</strong>
     </p>
-    <p class="primary-text">I'm a paragraph what do you want?</p>
-    <p class="box">I'm a paragraph as well.</p>
-    <div class="box primary-text">I'm not so what?</div>
     <p>
       See that? Multiple classes are space-separated in the
       <em>class</em> attribute and help us <strong>reuse style</strong> that
@@ -151,5 +147,30 @@
     <p>The <strong>total dimensions</strong> include its <strong>padding, borders</strong> and <strong>margins.</strong></p>
     <p>Sweet! Including the paragraph's padding, vborders and margins on <em>every side, </em>its total <strong>width</strong> is 300px; its <strong>total height is </strong> 200px.</p>
     <p>Next chapter Layouts</p>
-</body>
+    <p>Now that you know about the box model, let's  talk about <strong>positioning</strong> elements on a web page, starting with <strong>floats!</strong></p>
+    <p>When an element is floated, it's taken out the normal <strong>flow</strong> and placed along the left pr right side of its <strong>parent.</strong></p> <br>
+    <p><img src="https://getmimo.com/r/profile.svg" alt="image">I backed my car into a cop car the other day. Well, he just drove off - sometimes life's okey. I ran my mouth off a bit too much, ah what did I say? Well, you  just laughed it off and it was  all okay. And we'll all float on okay ... </p>
+    <p>Nice! In its simplest use, <em>float</em> wraps the text of a paragraph around an image.</p>
+    <p>Floated elements go to the left or right until they reach the boundaries of their <strong>parent</strong> or <strong>another floated element.</strong></p>
+    <div class="blue box"></div>
+    <div class="green box"></div>
+    <div class="blue box"></div>
+    <div class="green box"></div>
+    <br>
+    <div class="blue floated box"></div>
+    <div class="green floated box"></div>
+    <div class="orange cleared box"></div>
+    <div class="pink box"></div>
+    
+    <div id="header"></div>
+    <div id="content"></div>
+    <div id="navigation"></div>
+    <div id="footer"></div>
+    <br>
+    <div id="topp">Introduction CSS
+    </div>
+    <p class="pcenter">Put me in the center of attention!</p>
+    <div id="dheader"></div>
+    <p class="pfly">Fly me to the moon .. or at least lift me up a bit.</p>
+  </body>
 </html>
