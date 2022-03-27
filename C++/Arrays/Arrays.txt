@@ -1,0 +1,61 @@
+Arrays
+
+It's a data  structure where we store a sequential
+collenction of elements all of the same type.
+
+string ourArray[10];
+To declare an array, we give the type, followed by the name and then the number
+of elements in the array.
+
+int ages[6] = {18, 19, 20, 21, 22, 23};
+To initialize we can put all elements in {} after the declaration.
+
+If we do not define a size and initialize like this, the program will create
+an array of size equal to the number of elements given.
+
+And then there is the element by element way of initializating. Just initialize the 
+value for each place in the array.
+
+string names[3];
+names[0] = "Kate";
+names[1] = "Mike";
+names[2] = "Annie";
+cout<<names[1];
+
+The number in the [] when we initialize each element is known as the index of 
+the array. In other words, the position.
+Arrays are zero-indexed meaning they start at 0 not 1.
+
+To replace an element, we simply access it using the index number and then set it = 
+to our new value.
+Remember all elements must be the type declared!
+
+sizeof() will return the number of bytes in an array.
+
+But if we divide the size of the array by the size of a single element, we'll have
+the number of elements!
+
+The number of bytes in the array divided by the number of bytes in a single 
+element will give you the size!
+
+C++ doesn't check where a new element fits in an array and we could lose data if 
+it's put into memory already occupied!
+
+We can also create array of arrays, which are also known as multi-dimensional
+arrays. With every dimension we add, things get more complex.
+
+When we look at two-dimensional arrays, it's convenient to think of them as tables.
+
+The numbers in the brackets are the number of subarrays and their size. In the nested
+braces, a set of numbers represents a row.
+
+The elements are sequential and all the same type. There's no limit to the amount of
+elements we can include but the count is fixed after declaration.
+
+As long as we declare a size for the array, we can add any elements after initialization
+if there's space!
+
+Remember C++ won't check if an index fits in an array, so we'll have to be careful.
+
+The first index refers to which subarray we are accesing. The second index referes to the 
+element in that subarray.
