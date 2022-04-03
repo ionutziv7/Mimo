@@ -1,0 +1,12 @@
+h1 {
+    border: solid 1px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+    width: 120px;
+}
