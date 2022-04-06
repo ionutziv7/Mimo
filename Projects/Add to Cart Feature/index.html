@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add To Cart Feature</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Online Store</h1>
+    <img src="img/cart.png" id="basketImage" onclick="clickCart()" alt="" />
+    <h2 id="itemCounter">0</h2>
+    <p id="orderTotal"></p>
+    <div class="product">
+      <img src="img/backpack.jpg" width="300" alt="" />
+      <h3>Backpack</h3>
+      <button onclick="addToCart(backpack)">Add to Cart</button>
+      <button onclick="removeItem(backpack)">Remove Item</button>
+    </div>
+    <div class="product">
+      <img src="img/camera.jpg" width="300" alt="" />
+      <h3>Camera</h3>
+      <button onclick="addToCart(camera)">Add to Cart</button>
+      <button onclick="removeItem(camera)">Remove Item</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
