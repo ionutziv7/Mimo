@@ -1,0 +1,9 @@
+img {
+    border-radius: 100px 0 100px 0;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+body {
+    background-color: mintcream;
+}
