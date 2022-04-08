@@ -1,0 +1,48 @@
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+
+.instapic {
+    height: 50px;
+    width: 250px;
+    background-color: bisque;
+}
+
+.coupon {
+    border: solid 10px;
+}
+
+.movie {
+    border-radius: 10px;
+    background-color: lightblue;
+    border: solid;
+}
+
+.wing {
+    border-radius: 100px;
+    border: solid 5px black;
+}
+
+.lighthouse {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.photo {
+    height: 100px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.population {
+    border: solid 5px plum;
+    border-radius: 10px;
+}
+
+.funFact {
+    border: solid 5px green;
+    border-radius: 10px;
+}
