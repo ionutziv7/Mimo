@@ -1,0 +1,7 @@
+p {
+    background:linear-gradient(90deg, turquoise, teal);
+    padding: 50px 10px 50px 10px;
+    border: solid 10px teal;
+    font-weight: bold;
+    font-size: 20px;
+}
