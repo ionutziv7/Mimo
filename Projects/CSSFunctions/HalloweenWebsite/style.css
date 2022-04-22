@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    font-family: monospace;
+}
+h2 {
+    filter: blur(1px);
+}
+img {
+    filter: grayscale(100%);
+    margin: 20px 0 20px 0;
+}
+a {
+    color: black;
+    background-color: lightgray;
+    filter: opacity(50%);
+}
+p {
+    background-color: lightgray;
+    filter: opacity(40%);
+}
