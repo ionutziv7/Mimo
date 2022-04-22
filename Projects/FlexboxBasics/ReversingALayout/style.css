@@ -1,0 +1,13 @@
+h3 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.item {
+    padding: 15px;
+    margin: 2px;
+    background-color: #F3EBFE;
+}
