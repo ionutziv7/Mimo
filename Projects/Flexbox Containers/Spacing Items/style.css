@@ -1,0 +1,17 @@
+.container {
+    height: 280px;
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #FFFFFF;
+    margin: 5px;
+}
+h3{
+    text-align: center;
+}
