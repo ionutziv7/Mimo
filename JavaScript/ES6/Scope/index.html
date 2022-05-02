@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Scope</h1>
+    <p>
+      <strong>Local</strong> or <strong>function</strong> scope refers to the
+      part of code inside a function.
+    </p>
+    <p>
+      Here, <span>country</span> is a local variable that we can access only
+      inside of the <span>visitCountry</span> function.
+    </p>
+    <p>
+      The space outside a function is called <strong>global scope</strong>. You
+      can think of it as the code between functions.
+    </p>
+    <p>
+      If we declare <span>cityToVisit</span> in the global scope, we can access
+      it from outside and also from inside the <span>travel</span> function.
+    </p>
+    <p>
+      The last scope is called <strong>block scope</strong>. It's part of our
+      code in between the braces (<span class="braces">{}</span>) that belong to
+      loops or conditionals.
+    </p>
+    <p>
+      <span>var</span> variables don't respect block scope, which is why they
+      can lead to errors if we declare them more than once.
+    </p>
+    <p>
+      Here, we're changing the value of the <span>access</span> variable
+      brecause we're redeclaring it in the conditional. What will be the output?
+    </p>
+    <p>
+      If we define <span>let</span> and <span>const</span> in a block scope, we
+      can only access them in that block of code.
+    </p>
+    <p>Here there are two <span>canDrive</span> variables.</p>
+    <p>But we're only displaying one of them, which one?</p>
+    <script src="index.js"></script>
+  </body>
+</html>

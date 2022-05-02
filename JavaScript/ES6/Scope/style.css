@@ -1,0 +1,16 @@
+body {
+    margin: 50px 100px;
+}
+span {
+    padding: 2px 15px;
+    margin: 2px 2px;
+    color: #fff;
+    background-color: darkblue;
+}
+.braces {
+    padding: 2px 5px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
