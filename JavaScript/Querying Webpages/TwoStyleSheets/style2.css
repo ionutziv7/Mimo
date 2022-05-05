@@ -1,0 +1,16 @@
+.container{
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item {
+    background-color: rgba(134, 13, 13, 0.982);
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

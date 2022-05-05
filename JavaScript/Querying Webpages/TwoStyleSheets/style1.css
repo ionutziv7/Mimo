@@ -1,0 +1,13 @@
+.container{
+    background-color: #edc9b5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    background-color: #ffeccd;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
