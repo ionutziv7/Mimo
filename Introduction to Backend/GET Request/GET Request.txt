@@ -1,0 +1,65 @@
+Let's take a more in-depth look at GET request's parts.
+
+The first part of the request, containing the method, the URL, and the 
+protocol HTTP/1.1 is called a request line.
+
+GET https://mimo.com/users HTTP/1.1
+Host: mimo.com
+User-Agent: Mozilla/5.0
+Accept: text/html, image/jpeg
+Accept-Language: en-us, en
+Accept-Encoding: gzip, deflate
+Accept-Charset: ISO-8859-1, utf-8
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: PHPSESSID=r2t5uvjq435r4
+Cache-Control: no-cache
+
+As previously introduced, https://mimo.com stands for the server, 
+while /users represents the resourse we're requesting.
+
+Console Editor
+GET https://mimo.com/users HTTP/1.1/
+
+URLs can have parameters. like 1033 here stands for a user's ID.
+format: https://mimo.com/users/:id
+
+    GET https://mimo.com/users/1033
+HTTP/1.1
+
+What's tha address of the server we're sending this request to?
+GET https://abc.com/movies HTTP/1.1
+
+abc.com
+
+What might 1234 in this request URL stand for?
+GET https://abc.com/movies/1234 HTTP:/1.1
+
+An URL parameter, possibly a movie ID
+
+Compose a GET request line by coding the method, server address, 
+the movies resource, and finally, the protocol.
+GET https://abc.com/movies HTTP/1.1
+
+Access the genres resource of the server at abc.com by coding / and genres.
+GET https://abc.com/genres HTTP/1.1
+
+Use a URL parameter to access the resource at /movies with the ID 12345
+GET https://abc.com/movies/12345
+
+The request line URL can also have query parameters. These are key-value pairs
+that appear after a ? sign.
+GET https://mimo.com/users?membership=premium HTTP/1.1
+
+URLs can have several query parameters chained though &. Here, we're
+requesting premium users with an active streak.
+GET https://mimo.com/users?membership=premium&activestreak=true HTTP/1.1
+
+Request a list of movies with a rating equal to 5.
+GET https://abc.com/movies?rating=5
+
+Request a list of movies with a rating of 4 and action as the genre.
+GET https://abc.com/movies? rating=4&genre=action HTTP/1.1
+
+How might the backend know that a specific request belongs to a specific user session?
+Through the value of the session cookie in the Cookie header
