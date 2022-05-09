@@ -1,0 +1,70 @@
+As we've already covered, web browsers communicate with web servers through HTTP.
+
+CLIENT      ->REQUEST         SERVER
+              <-RESPONSE  
+
+Every time you use a search engine, make an online purchase or even click a link, the 
+browser sends a request to a server.
+
+A request is made of different parts, each with a specific role. The URL specifies the
+location of the server and the content or resource.
+
+ GET     https://abc.com     /movies
+|---|   |---------------|    |------|
+method   backend location    resource
+
+The method of a browser request defines the type of action is should perform.
+There are a few different methods that browsers can send.
+
+Which actions might require different methods?
+    Creating a new account, deleting an account.
+
+GET is a frequently used method. GET means the browser wants to retrieve a specific 
+resource. For example a product description.
+GET 
+https://coolproducts.com/robots/newrol/4
+
+POST is another common method, which helps us create something new on the backend.
+For example, adding a new user to the database.
+POST 
+https://coolproducts.com/signup/newAccount
+
+Examples of a POST request include creating a new account, writing a new blog post
+entry, or uploading a new social media post.
+POST https://insta.com/posts/new
+
+DELETE is another common HTTP method that removes someting on the server, like deleting
+an account or a post.
+DELETE 
+https://coolproducts.com/robots/newrol/6
+
+How do web browsers communicate with web servers?
+Through HTTP requests
+
+When might the browser send an HTTP request to the server?
+When you post a new picture
+
+What's the location of the server in this URL?
+DELETE https://coolproducts.com/robots/6
+    coolproducts.com
+
+When does the frontend send a GET request?
+When it wants to retrieve some information from the backend
+
+When does the frontend send a POST request?
+When it wants the server to save a new resource.
+
+Send a GET request to a server available at gameworld.com, to retrieve
+the game with the ID 001.
+GET https://gameworld.com/games/001
+
+Add a method to retrieve all the writers from the server at 
+obscurewriters.com
+GET https://obscurewriters.com/writers
+
+Code a method to add a new writer to the database of writes at 
+obscurewriters.
+POST https://obscurewriters.com/writers
+
+Delete the writer with the ID 1034 from the database of writers by coding DELETE.
+DELETE https://obscurewriters.com/writers/1034
