@@ -1,0 +1,81 @@
+When it comes to HTTP methods, we can loosely group them into two categories.
+
+There are methods that request a piece of data or a server behavior, like GET or
+DELETE, those that send data to the server.
+
+POST is a request method that we use to send new data to the server, like a new user's 
+account credentials.
+POST https://mimo.com/users
+
+POST relies on a URL containing the server address, along with the type of resource 
+the new data is related to.
+POST https://mimo.com/users
+
+Unlike GET, POST requests rarely use query parameters in their URL, and instead rely on the 
+request body to hold the data.
+POST https://mimo.com/users
+{
+    "username": "nia22",
+    "email": "nia.m@gmail.com"
+}
+
+How does the browser know where to send the data in the POST request?
+Through the server address in the request's URL
+
+Code an HTTP request method that retrieves data from a server.
+GET https://fakenews.com/article/112
+
+Send a POST request to a server at fakenews.com
+POST https://fakenews.com/article
+
+You can see that this POST request's body Content-Type is application/json
+POST https://mimo.com/users
+HOST: mimo.com
+Content-Type: application/json 
+Content-Length: 40
+
+{
+    "username": "nia22",
+    "email": "nia.m@gmail.com"
+}
+
+Where do POST requests store the data they send to the server?
+In the request body
+
+Responses to POST requests consist, as we've seen before, of a status line,
+headers like Date, and an optional response body.
+
+HTTP/1.1 210 Created
+Date: Mon, 21 Jul 2021 12:28:53
+Server: Apache/2.2.14 (Win32)
+Content-Length: 45
+Content-Type: application/json
+Connection: Closed
+
+{
+    "username": "nia22",
+    "email": "nia.m@gmail.com" 
+}
+
+If the POST request is successful, servers usually send a status 201 Created
+instead of 200 OK
+HTTP/1.1 201 Created
+
+POST requests can fail for a large number of reasons, like faulty syntax. In that case,
+the server sends an error code like 400 Bad Request.
+HTTP/1.1 400 Bad Request
+
+Which status code do we get if our POST request succeeded?
+201 Created
+
+What does 201 Created mean?
+That the server successfully entered the sent data in the database
+
+What might the server send back in a request with a 201 Created status?
+The data item it has created in the database
+
+Which of these codes could we get if our POST request fails?
+400
+
+Add a status code we might receive if our POST request failed.
+HTTP/1.1 500 Internal Server Error
