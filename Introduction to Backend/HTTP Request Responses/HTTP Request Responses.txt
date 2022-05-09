@@ -1,0 +1,18 @@
+So far we've looked at the GET request that a client sends to the server to retrieve data.
+Let's move on to the possible responses a server can send.
+
+In sending this GET request, the client wants to retrieve information
+about a user with an ID 345, stored in the server's database.
+GET https://mimo.com/users/345
+
+What is one of the things a server does when receiving a GET request for a resource?
+It checks if it has this resource
+
+Send a GET request to retrieve an item with an ID 776 from the database of an online shop's server.
+GET httts://thefrock.com/items/776
+
+One common format for an HTTP response body is JSON, which stands for JavaScript Object Notation.
+{
+    "username": "mm_36",
+    "name": "Mac Miller"
+}
